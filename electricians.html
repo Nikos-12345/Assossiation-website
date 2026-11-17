@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Κατάλογος εγγεγραμμένων ηλεκτρολόγων του Συνδέσμου Ηλεκτρολόγων Καβάλας.">
+    <title>Ηλεκτρολόγοι | Σύνδεσμος Ηλεκτρολόγων Καβάλας</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip Link για προσβασιμότητα -->
+    <a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+
+    <!-- Κεφαλίδα Ιστοσελίδας -->
+    <header class="site-header" id="top">
+
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="logo-mark">ΣΗΚ</span>
+                <span class="brand-copy">
+                    <strong>Σύνδεσμος</strong>
+                    <span>Ηλεκτρολόγων Καβάλας</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+                <span class="sr-only">Άνοιγμα μενού</span>
+                <span></span><span></span><span></span>
+            </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Κύρια πλοήγηση">
+        <a href="index.html">
+          <span class="nav-label">Αρχική</span>
+        </a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span class="nav-label">Ο Σύνδεσμος</span>
+            <span class="dropdown-icon" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="Syndesmos/activities.html">
+              <span class="nav-label">Δραστηριότητες</span>
+            </a>
+            <a href="Syndesmos/seminars.html">
+              <span class="nav-label">Σεμινάρια</span>
+            </a>
+            <a href="Syndesmos/symboulio.html">
+              <span class="nav-label">Διοικητικό Συμβούλιο</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span class="nav-label">Νομοθεσία</span>
+            <span class="dropdown-icon" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="Nomothesia/laws.html">
+              <span class="nav-label">Νόμοι &amp; Διατάξεις</span>
+            </a>
+            <a href="Nomothesia/regulations.html">
+              <span class="nav-label">Κανονισμοί</span>
+            </a>
+          </div>
+        </div>
+        <a href="electricians.html" aria-current="page">
+          <span class="nav-label">Ηλεκτρολόγοι</span>
+        </a>
+        <a href="contact.html">
+          <span class="nav-label">Επικοινωνία</span>
+        </a>
+        <a class="nav-cta" href="electricians.html">
+          Βρες ηλεκτρολόγο
+        </a>
+      </nav>
+        </div>
+    </header>
+
+    <!-- Κύριο Περιεχόμενο -->
+    <main id="main-content">
+        <section class="page-hero page-hero--compact" aria-labelledby="electricians-title">
+            <div class="container">
+                <p class="eyebrow">Κατάλογος μελών</p>
+                <h1 id="electricians-title">Βρείτε ηλεκτρολόγο στην Καβάλα</h1>
+                <p>Αναζητήστε εγγεγραμμένα μέλη του Συνδέσμου ανά όνομα, περιοχή ή στοιχεία επικοινωνίας.</p>
+            </div>
+        </section>
+        <section class="section directory-section">
+            <div class="container">
+                
+                <!-- Πεδίο Αναζήτησης -->
+                <div class="directory-search">
+                  <div class="search-input-wrapper">
+                    <label class="sr-only" for="member-search">Αναζήτηση ηλεκτρολόγου</label>
+                    <input id="member-search" type="search" placeholder="Αναζήτηση ονόματος ή περιοχής" aria-describedby="member-search-help">
+                    <span class="sr-only" id="member-search-help">Πληκτρολογήστε όνομα, οδό, δήμο ή περιοχή.</span>
+                    <span class="search-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0056b3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Πλέγμα Καρτών Μελών (Γεμίζει δυναμικά μέσω JS) -->
+                <div id="members-grid" class="members-grid"></div>
+
+                <!-- Μπάρα Σελιδποίησης (Pagination) -->
+                <nav class="pagination-container" aria-label="Πλοήγηση σελίδων">
+                    <div id="pagination" class="pagination"></div>
+                </nav>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Υποσέλιδο -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a class="brand footer-brand" href="index.html">
+                    <span class="logo-mark" aria-hidden="true">ΣΗΚ</span>
+                    <span class="brand-copy">
+                        <strong>Σύνδεσμος</strong>
+                        <span>Ηλεκτρολόγων Καβάλας</span>
+                    </span>
+                </a>
+                <p>Ενημέρωση, ασφάλεια και τεχνική υποστήριξη για την τοπική κοινότητα.</p>
+            </div>
+
+            <div class="footer-col">
+                <h2>Ώρες λειτουργίας</h2>
+                <dl class="hours">
+                    <div><dt>Δευτέρα–Παρασκευή</dt><dd>09:00–14:00</dd></div>
+                    <div><dt>Σάββατο–Κυριακή</dt><dd>Κλειστά</dd></div>
+                </dl>
+            </div>
+
+            <div class="footer-col">
+                <h2>Στοιχεία επικοινωνίας</h2>
+                <address>
+                    <a href="tel:+300000000000">+30 000 000 0000</a>
+                    <a href="mailto:info@example.gr">info@example.gr</a>
+                    <span>Διεύθυνση γραφείων<br>Καβάλα, Τ.Κ. 000 00</span>
+                </address>
+            </div>
+            <div class="footer-col">
+            <div class="map-placeholder" role="region" aria-label="Χάρτης γραφείου">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48416.71158580348!2d24.388147614272186!3d40.93957242858455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14abb359005086d7%3A0x400bd2ce6b986e0!2zzprOsc67zqzOus63!5e0!3m2!1sel!2sgr!4v1718000000000!5m2!1sel!2sgr"
+                    title="Έδρα συνδέσμου"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© <span id="current-year"></span> Σύνδεσμος Ηλεκτρολόγων Καβάλας</p>
+            <a href="#top">Πίσω στην κορυφή ↑</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

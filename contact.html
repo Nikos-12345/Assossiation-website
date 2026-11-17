@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+  <html lang="el">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta name="description" content="Επικοινωνήστε με το γραφείο του Συνδέσμου Ηλεκτρολόγων Καβάλας.">
+      <title>Επικοινωνία | Σύνδεσμος Ηλεκτρολόγων Καβάλας</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+      <header class="site-header" id="top">
+        <div class="container header-inner">
+          <a class="brand" href="index.html"><span class="logo-mark">ΣΗΚ</span>
+            <span class="brand-copy"><strong>Σύνδεσμος</strong><span>Ηλεκτρολόγων Καβάλας</span></span>
+          </a>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+            <span class="sr-only">Άνοιγμα μενού</span><span></span><span></span><span></span>
+          </button>
+      <nav class="main-nav" id="main-navigation" aria-label="Κύρια πλοήγηση">
+        <a href="index.html">
+          <span class="nav-label">Αρχική</span>
+        </a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span class="nav-label">Ο Σύνδεσμος</span>
+            <span class="dropdown-icon" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="Syndesmos/activities.html">
+              <span class="nav-label">Δραστηριότητες</span>
+            </a>
+            <a href="Syndesmos/seminars.html">
+              <span class="nav-label">Σεμινάρια</span>
+            </a>
+            <a href="Syndesmos/symboulio.html">
+              <span class="nav-label">Διοικητικό Συμβούλιο</span>
+            </a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false">
+            <span class="nav-label">Νομοθεσία</span>
+            <span class="dropdown-icon" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="Nomothesia/laws.html">
+              <span class="nav-label">Νόμοι &amp; Διατάξεις</span>
+            </a>
+            <a href="Nomothesia/regulations.html">
+              <span class="nav-label">Κανονισμοί</span>
+            </a>
+          </div>
+        </div>
+        <a href="electricians.html">
+          <span class="nav-label">Ηλεκτρολόγοι</span>
+        </a>
+        <a href="contact.html" aria-current="page">
+          <span class="nav-label">Επικοινωνία</span>
+        </a>
+        <a class="nav-cta" href="electricians.html">
+          Βρες ηλεκτρολόγο
+        </a>
+      </nav>
+        </div>
+      </header>
+      <main id="main-content">
+        <section class="page-hero page-hero--compact" aria-labelledby="contact-title">
+          <div class="container">
+            <p class="eyebrow">Επικοινωνία</p>
+            <h1 id="contact-title">Επικοινωνήστε με τον Σύνδεσμο</h1>
+            <p>Για πληροφορίες, αιτήματα ή τεχνική ενημέρωση, η γραμματεία του Συνδέσμου είναι στη διάθεσή σας.</p>
+          </div>
+        </section>
+        <section class="section contact-section">
+        <div class="container">
+          <div class="contact-page-grid">
+            <!-- Αριστερά: στοιχεία επικοινωνίας -->
+            <div class="contact-information">
+              <p class="eyebrow">Στοιχεία επικοινωνίας</p>
+              <h2>Γραφείο Συνδέσμου</h2>
+              <div class="info-block"><span>Τηλέφωνο</span><a href="tel:+300000000000">+30 000 000 0000</a></div>
+              <div class="info-block"><span>Email</span><a href="mailto:info@example.gr">info@example.gr</a></div>
+              <div class="info-block"><span>Διεύθυνση</span><p>Διεύθυνση γραφείων<br>Καβάλα, Τ.Κ. 000 00</p></div>
+              <div class="info-block"><span>Ώρες λειτουργίας</span><p>Δευτέρα–Παρασκευή, 09:00–14:00</p></div>
+            </div>
+
+            <!-- Δεξιά: φόρμα -->
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/ΤΟ_ΚΩΔΙΚΟ_ΣΟΥ" method="POST">
+            <p class="eyebrow">Στείλτε μήνυμα</p>
+            <h2>Πώς μπορούμε να βοηθήσουμε;</h2>
+
+            <div class="form-row">
+              <div>
+                <label for="name">Ονοματεπώνυμο</label>
+                <input id="name" name="name" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="phone">Τηλέφωνο</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+            </div>
+
+<div class="form-row">
+  <div>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+  </div>
+  <div>
+    <label for="subject">Θέμα</label>
+    <input id="subject" name="subject" required>
+  </div>
+</div>
+
+<label for="message">Μήνυμα</label>
+<textarea id="message" name="message" rows="3" required></textarea>
+
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="button button-primary" type="submit">Αποστολή μηνύματος →</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- Από κάτω: ο χάρτης -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48416.71158580348!2d24.388147614272186!3d40.93957242858455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14abb359005086d7%3A0x400bd2ce6b986e0!2zzprOsc67zqzOus63!5e0!3m2!1sel!2sgr!4v1718000000000!5m2!1sel!2sgr"
+            title="Χάρτης με την έδρα του Συνδέσμου"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            allowfullscreen>
+          </iframe>
+          </div>
+        </div>
+        </section>
+      </main>
+        <footer class="site-footer">
+          <div class="container footer-grid">
+            <div class="footer-col">
+              <a class="brand footer-brand" href="index.html"><span class="logo-mark" aria-hidden="true">ΣΗΚ</span><span class="brand-copy"><strong>Σύνδεσμος</strong><span>Ηλεκτρολόγων Καβάλας</span></span></a>
+                <p>Ενημέρωση, ασφάλεια και τεχνική υποστήριξη για την τοπική κοινότητα.</p>
+            </div>
+            <div class="footer-col">
+              <h2>Ώρες λειτουργίας</h2>
+      <dl class="hours">
+        <div><dt>Δευτέρα–Παρασκευή</dt><dd>09:00–14:00</dd></div>
+        <div><dt>Σάββατο–Κυριακή</dt><dd>Κλειστά</dd></div>
+      </dl>
+    </div>
+    <div class="footer-col">
+      <h2>Στοιχεία επικοινωνίας</h2>
+      <address>
+        <a href="tel:+300000000000">+30 000 000 0000</a>
+        <a href="mailto:info@example.gr">info@example.gr</a>
+        <span>Διεύθυνση γραφείων<br>Καβάλα, Τ.Κ. 000 00</span>
+      </address>
+    </div>
+  </div>
+  <div class="container footer-bottom"><p>© <span id="current-year"></span> Σύνδεσμος Ηλεκτρολόγων Καβάλας</p><a href="#top">Πίσω στην κορυφή ↑</a></div>
+</footer><script src="js/script.js"></script></body></html>
